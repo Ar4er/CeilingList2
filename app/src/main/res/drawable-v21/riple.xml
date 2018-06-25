@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:textColorAlertDialogListItem">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/four_hangry"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/three_hungry"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+
+</ripple>

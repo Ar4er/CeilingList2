@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                ads:cardBackgroundColor="@color/second_light_brown"
+                ads:cardCornerRadius="10dp"
+                ads:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/info_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        ads:cardCornerRadius="20dp"
+                        ads:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name_info_text_view"
+                                style="@style/BigTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="потолок"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/four_hangry"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/description_string"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/textView"
+                                style="?android:listSeparatorTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/sizes_title" />
+
+                            <TextView
+                                android:id="@+id/sizes_info_text_view"
+                                style="@style/item_count_text_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp" />
+
+                            <TextView
+                                style="?android:listSeparatorTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/title_area" />
+
+                            <TextView
+                                android:id="@+id/area_info_text_view"
+                                style="@style/item_count_text_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp" />
+
+                            <TextView
+                                style="?android:listSeparatorTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/title_cd_step" />
+
+                            <TextView
+                                android:id="@+id/cd_step_info_text_view"
+                                style="@style/item_count_text_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp" />
+
+                            <TextView
+                                style="?android:listSeparatorTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/title_panel_layers" />
+
+                            <TextView
+                                android:id="@+id/panel_layers_info_text_view"
+                                style="@style/item_count_text_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="20dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/panel_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        ads:cardCornerRadius="20dp"
+                        ads:cardElevation="10dp">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/image_panel"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true" />
+
+                            <TextView
+                                android:id="@+id/card_set_panel_lable_text"
+                                style="@style/fifteen_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@id/image_panel"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="4dp"
+                                android:padding="4dp"
+                                android:text="@string/title_panels"
+                                android:textStyle="bold" />
+
+                            <TableLayout
+                                android:id="@+id/card_set_size_panel_Layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/card_set_panel_lable_text">
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:id="@+id/_size_panel_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:hint="@string/sub_title_size_3"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_panel_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </TableRow>
+                            </TableLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/profiil_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        ads:cardBackgroundColor="@color/light_brown"
+                        ads:cardCornerRadius="20dp"
+                        ads:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/steel_profile_title"
+                                android:textStyle="bold" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cd_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="10dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/Cd_card_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_cd"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_cd_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_cd"
+                                        android:textStyle="bold" />
+
+                                    <TableLayout
+                                        android:id="@+id/card_set_size_3m_Layout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@id/card_set_cd_lable_text">
+
+                                        <TableRow android:id="@+id/card_set_cd_3m_tableRow">
+
+                                            <TextView
+                                                android:id="@+id/first_size_cd_text"
+                                                style="@style/fifteen_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_margin="4dp"
+                                                android:hint="@string/sub_title_size_3"
+                                                android:textStyle="bold"
+
+                                                />
+
+                                            <TextView
+                                                android:id="@+id/first_size_cd_count_text"
+                                                style="@style/item_count_text_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:hint="16 шт" />
+                                        </TableRow>
+
+                                        <TableLayout
+                                            android:id="@+id/card_set_size_4m_Layout"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_below="@id/card_set_cd_lable_text">
+
+                                            <TableRow
+                                                android:id="@+id/card_set_cd_4m_tableRow"
+                                                android:layout_marginBottom="20dp">
+
+                                                <TextView
+                                                    android:id="@+id/secend_size_cd_text"
+                                                    style="@style/fifteen_style"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_margin="4dp"
+                                                    android:hint="@string/sub_title_size_4"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/secend_size_cd_count_text"
+                                                    style="@style/item_count_text_style"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="16 шт" />
+                                            </TableRow>
+                                        </TableLayout>
+                                    </TableLayout>
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/ud_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                android:layout_marginBottom="16dp"
+                                ads:cardCornerRadius="10dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ImageView
+                                        android:id="@+id/image_ud"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_ud_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_ud"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_ud"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/card_set_ud_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerInParent="true"
+                                        android:paddingLeft="20dp" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/locks_info_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        ads:cardBackgroundColor="@color/light_brown"
+                        ads:cardCornerRadius="20dp"
+                        ads:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/loks_info_text_view"
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/fixigs_title"
+                                android:textStyle="bold" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/lock_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="10dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_lock"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_lock_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_lock"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_locks"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/card_set_lock_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerInParent="true"
+                                        android:paddingLeft="20dp" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/suspend_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="10dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_suspend"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_suspend_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_suspend"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_suspends"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/card_set_suspend_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerInParent="true"
+                                        android:paddingLeft="20dp" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/connector_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="10dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_connector"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_connector_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_connector"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_connecter"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/card_set_connector_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerInParent="true"
+                                        android:paddingLeft="20dp" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/four_hangry"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/screws_info_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        ads:cardBackgroundColor="@color/light_brown"
+                        ads:cardCornerRadius="20dp"
+                        ads:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/Screw_Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/screws_info_text_view"
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/screws_title"
+                                android:textStyle="bold" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/screw_concrete_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="20dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_screw_concrete"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_concrete_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_screw_concrete"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_screw_on_concrete"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_concrete_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerInParent="true"
+                                        android:paddingLeft="20dp" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/screw_wood_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="20dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_screw_wood"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_wood_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_screw_wood"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_self_tapping_screw"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_wood_count_text"
+                                        style="@style/item_count_text_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:paddingLeft="20dp" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/screw_drywall_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="20dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_screw_drywall"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_drywall_lable_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@id/image_screw_drywall"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_screw_panel"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_drywall_description_text"
+                                        style="@style/five_sp_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@id/card_set_screw_drywall_lable_text"
+                                        android:layout_margin="4dp"
+                                        android:text="@string/drywalscrews_description" />
+
+                                    <TableLayout
+                                        android:id="@+id/card_set_table_Layout_panel_screws"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@id/card_set_screw_drywall_description_text">
+
+                                        <TableRow android:layout_marginBottom="20dp">
+
+                                            <TextView
+                                                android:id="@+id/forty_size_screw_drywall_text"
+                                                style="@style/fifteen_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_margin="4dp"
+                                                android:text="@string/dw_screw_size_40mm"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/card_set_screw_drywall_count_text"
+                                                style="@style/item_count_text_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="4dp" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/screw_panel_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                ads:cardCornerRadius="20dp"
+                                ads:cardElevation="10dp">
+
+                                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/image_screw_panel"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <TextView
+                                        android:id="@+id/card_set_screw_panel_label_text"
+                                        style="@style/fifteen_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="4dp"
+                                        android:padding="4dp"
+                                        android:text="@string/title_screw_panel"
+                                        android:textStyle="bold" />
+
+                                    <TableLayout
+                                        android:id="@+id/card_set_table_Layout_drywallscrews"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@id/card_set_screw_panel_label_text">
+
+                                        <TableRow android:id="@+id/card_set_dwscrew_25mm_tableRow">
+
+                                            <TextView
+                                                android:id="@+id/first_size_dwscrew_text"
+                                                style="@style/fifteen_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_margin="4dp"
+                                                android:hint="@string/dw_screw_size_25mm"
+                                                android:text="@string/dw_screw_size_25mm"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/first_size_dwscrew_count_text"
+                                                style="@style/item_count_text_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:hint="16 шт" />
+                                        </TableRow>
+                                    </TableLayout>
+
+                                    <TableLayout
+                                        android:id="@+id/card_set_table_Layout_drywallscrews_secend_size"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@id/card_set_table_Layout_drywallscrews">
+
+                                        <TableRow
+                                            android:id="@+id/card_set_dwscrew_35mm_tableRow"
+                                            android:layout_marginBottom="20dp"
+
+                                            >
+
+                                            <TextView
+                                                android:id="@+id/secend_size_dwscrew_text"
+                                                style="@style/fifteen_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_margin="4dp"
+                                                android:hint="@string/dw_screw_size_40mm"
+                                                android:text="@string/dw_screw_size_40mm"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/secend_size_dwscrew_count_text"
+                                                style="@style/item_count_text_style"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:hint="16 шт" />
+                                        </TableRow>
+                                    </TableLayout>
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                style="@style/fifteen_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/four_hangry"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

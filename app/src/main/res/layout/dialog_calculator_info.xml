@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+   <TextView
+    android:id="@+id/dialog_calc_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    style="@style/Base.TextAppearance.AppCompat"
+    android:gravity="center"
+    android:text="@string/calc_info_dialog_text"/>
+
+   <CheckBox
+       android:id="@+id/checkbox_dont_view_again"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="24dp"
+       android:text="@string/dont_view_again"
+       android:layout_weight="1" />
+</LinearLayout>
